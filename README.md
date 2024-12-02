@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema de Gestión para Veterinarias
 
 Este proyecto consiste en el desarrollo de un sistema integral para la administración de una clínica veterinaria. Su objetivo es automatizar las tareas clave del negocio, mejorando la eficiencia en la gestión de citas, clientes, productos, servicios y el seguimiento médico de las mascotas. El sistema facilita la generación de reportes financieros, gestión de inventario y la atención médica personalizada, optimizando el flujo de trabajo dentro de la clínica.
@@ -312,3 +313,6 @@ CREATE TABLE usuarios (
 Si deseas contribuir al desarrollo de este proyecto, por favor sigue los lineamientos para crear un fork y enviar un pull request.
 
  
+=======
+# dwi-tf
+>>>>>>> 63d0492bf2750d99c3f5a6d97e04bade7b7026ee

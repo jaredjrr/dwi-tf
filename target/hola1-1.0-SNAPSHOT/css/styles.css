@@ -1,0 +1,1194 @@
+/* Head (Estilos globales como tipografía y color de fondo) */
+body {
+    font-family: "Roboto Slab", serif;
+    background-color: #e0f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    background-color: #6997b8; /* Color azul oscuro para un toque empresarial */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+/* Logo de la empresa */
+header .logo img {
+    max-width: 90px;
+    height: auto;
+}
+
+/* Contenedor de acciones de usuario con iconos alineados */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre cada ícono */
+}
+
+/* Estilos específicos para los iconos de usuario, carrito y logout */
+.user-actions img {
+    width: 25px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+    cursor: pointer; /* Cambia el cursor para indicar que son interactivos */
+    transition: transform 0.2s ease; /* Efecto de transición para agrandar el icono al pasar el mouse */
+}
+
+.user-actions img:hover {
+    transform: scale(1.1); /* Agranda ligeramente el icono al pasar el mouse */
+}
+
+
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Acción rápida de usuario - Iniciar Sesión */
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions .btn-primary {
+    background-color: #99E6D8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.user-actions .btn-primary:hover {
+    background-color: #e65c00;
+}
+
+
+/* Footer (LA PARTE INFE)*/
+footer {
+    background-color: #6997b8;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer .social-media a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen conserve sus proporciones */
+}
+
+footer .social-media a:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+    filter: brightness(0.8); /* Oscurecer el icono al hacer hover */
+}
+
+
+/* Botón Reutilizable con Animación */
+.animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.animated-button:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+}
+
+
+
+/* CENTRAR EL HEADER Y PONER EN CELESTE EN MEDIO*/
+/* Estilos de la Página de Inicio */
+.cabeza-welcome {
+    text-align: center;
+    padding: 40px;
+    background-color: #e0f7fa;
+}
+
+.cabeza-welcome h1 {
+    color: #00796b;
+    font-size: 2.5em;
+}
+
+.cabeza-welcome p {
+    font-size: 1.2em;
+    color: #004d40;
+}
+
+
+
+
+
+
+
+/* INDEX  SEMITERMINADO*/
+
+
+.explore-button {
+    background-color: #00796b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.explore-button:hover {
+    background-color: #004d40;
+}
+
+/* Sección de Servicios */
+.index-services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.service-item {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h2 {
+    color: #00796b;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+.service-image {
+    width : 50%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* CONTACTO */
+.contacto-container {
+    background-color: #E6F7F7; /* Fondo suave en tono verde agua */
+    padding: 40px;
+}
+
+.contacto-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-contacto {
+    color: #357a72; /* Verde calmado */
+    font-weight: bold;
+}
+
+.subtitulo-contacto {
+    color: #5A7D7C; /* Verde grisáceo */
+    transition: color 0.3s ease;
+}
+
+.contacto-content {
+    display: flex;
+    gap: 20px;
+}
+
+.contacto-sucursales {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sucursal-item {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sucursal-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nombre-sucursal {
+    color: #5FA58D; /* Verde medio */
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.direccion-sucursal {
+    color: #707070; /* Gris suave */
+    margin: 5px 0;
+}
+
+.whatsapp-sucursal a {
+    color: #357a72; /* Verde oscuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ver-sucursal {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2B6F66; /* Verde oscuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+.ver-sucursal:hover {
+    color: #1B4F4B; /* Verde más oscuro para el efecto hover */
+    text-decoration: underline;
+}
+
+.destacado {
+    border-left: 5px solid #5FA58D; /* Borde verde medio */
+}
+
+.contacto-mapa {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+
+/* NOSOTROS */
+
+.info-veterinarios {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.contenedor-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 180px;
+    margin: auto;
+    max-width: 1100px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 40px;
+}
+
+/* Ajustes para imágenes */
+.imagen-izquierda, .imagen-derecha {
+    flex: 0 0 150px; /* Ajusta el tamaño de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imagen-izquierda img, .imagen-derecha img {
+    width: 270%;
+    max-width: 399px;
+    border-radius: 8px;
+    box-shadow: 0 0px -10px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajustes de texto */
+.texto-izquierda, .texto-derecha {
+    max-width: 700px;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.texto-izquierda h2, .texto-derecha h2 {
+    font-size: 1.8em;
+    color: #2a6a69;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+    .contenedor-seccion {
+        flex-direction: row;
+    }
+
+    .imagen-izquierda, .imagen-derecha {
+        width: 30%;
+        max-width: 220px; /* Ajuste adicional para evitar que quede demasiado grande */
+    }
+
+    .texto-izquierda, .texto-derecha {
+        width: 65%;
+    }
+}
+
+/* SERVICIOS  */
+
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.servicio {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.icono-servicio {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.icono-servicio img {
+    width: 40px;
+    height: 40px;
+}
+
+.servicio h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    color: #666;
+    font-size: 0.95em;
+}
+
+
+/* LOGIN INICIANDO */
+/* Mensaje de éxito */
+.mensaje-exito {
+    color: green;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+}
+
+.login-content {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background: #e8f0f2;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(10, 77, 142, 94.1);
+    overflow: hidden;
+    align-items: center;
+}
+
+.login-form {
+    flex: 1;
+    padding: 100px;
+    background-color: #ffffff;
+}
+
+.login-form h2 {
+    font-size: 2em;
+    color: #2a6a69;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.forgot-password {
+    color: #2a6a69;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.login-button {
+    background-color: #2a6a69;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #1f4f4e;
+}
+
+.register-link {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.register-link a {
+    color: #2a6a69;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Imagen de Login */
+.login-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*INICIO DE SESION*/
+/* styles.css */
+
+
+
+
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #d16a54;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.illustration {
+    height: 150px;
+    background-image: url('mascotas.png'); /* Coloca aquí la imagen de las mascotas */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+.email-form label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.email-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.email-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f4b3a8;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+/* REGISTER INICIANDO */
+
+
+/* Contenedor de Registro */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+}
+
+.register-content {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background: #e8f0f2;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(10, 77, 142, 94.1);
+    overflow: hidden;
+    align-items: center;
+}
+
+.register-form {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.register-form h2 {
+    font-size: 2em;
+    color: #2a6a69;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-form label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.register-button {
+    background-color: #2a6a69;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #1f4f4e;
+}
+
+.login-link {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.login-link a {
+    color: #2a6a69;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Imagen de Registro */
+.register-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
+    .register-content {
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* USER */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f2f7fa;
+}
+
+/* Sección de Bienvenida y Acciones */
+.user-actions-section {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    background-color: #ffe6cc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container h2 {
+    color: #c75000;
+    font-size: 2em;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-action {
+    background-color: #ff6f00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de Mascotas */
+.pets-section,
+.appointments-section {
+    width: 100%;
+    max-width: 800px;
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header h3 {
+    color: #c75000;
+}
+
+.view-all {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pets-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.pet-card {
+    width: 120px;
+    height: 140px;
+    background-color: #f3f4f6;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pet-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.pet-card p {
+    font-weight: bold;
+    color: #555;
+}
+
+.add-new {
+    background-color: #ffe0b2;
+    color: #ff6f00;
+}
+
+/* Sección de Citas */
+
+
+.appointments-container {
+    display: flex;
+    gap: 20px; /* Aumenta el espacio entre las tarjetas */
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a varias líneas si es necesario */
+}
+
+.appointment-card {
+    width: 100%;
+    max-width: 220px; /* Ajusta el tamaño máximo de la tarjeta */
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px; /* Agrega espacio en la parte inferior de cada tarjeta */
+}
+
+.appointment-card p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.appointment-card strong {
+    font-size: 1.2em;
+    color: #c75000;
+}
+
+
+
+
+
+/* CITAS*/
+
+/* Contenedor principal del formulario */
+.formulario-cita {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Diseño de la cuadrícula del formulario */
+.cita-form {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Estilos para los mensajes de error y éxito */
+.mensajes .mensaje-exito {
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensajes .mensaje-error {
+    color: #f44336;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos individuales de cada grupo del formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="datetime-local"],
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+textarea {
+    grid-column: span 2;
+    height: 100px;
+    resize: vertical;
+}
+
+/* Botón de envío */
+.btn-agendar {
+    grid-column: span 2;
+    background-color: #1a5276;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agendar:hover {
+    background-color: #154360;
+}
+
+
+
+
+
+/* CARRITO DE COMPRA*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Estilos para la tabla del carrito */
+.cart-table {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cart-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cart-table p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+/* Estilos para la sección de resumen de compra */
+.cart-summary {
+    width: 25%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cart-summary p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.cart-summary strong {
+    font-size: 18px;
+    color: #333;
+}
+
+.btn-purchase, .btn-pay {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-purchase {
+    background-color: #dc3545;
+}
+
+.btn-purchase:hover {
+    background-color: #c82333;
+}
+
+.btn-pay {
+    background-color: #007bff;
+}
+
+.btn-pay:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PRODUCTOS */
+
+/* Contenedor principal de productos */
+.productos-container-unique {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centra los productos horizontalmente */
+    align-items: center;
+}
+
+/* Diseño en cuadrícula para los productos */
+.productos-grid-unique {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo para cada producto */
+.producto-item-unique {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    width: 300px; /* Ancho uniforme */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto-item-unique:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.producto-item-unique img {
+    max-width: 100%;
+    height: auto; /* Mantiene proporción */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Título del producto */
+.producto-item-unique h3 {
+    font-size: 1.3em;
+    color: #007acc;
+    margin-bottom: 5px;
+}
+
+/* Descripción del producto */
+.producto-item-unique p {
+    font-size: 0.9em;
+    color: #555555;
+    margin: 5px 0 10px;
+}
+
+/* Precio del producto */
+.producto-item-unique .precio {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 10px;
+}
+
+/* Botón de añadir al carrito */
+.producto-item-unique button {
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.producto-item-unique button:hover {
+    background-color: #005f99;
+}
